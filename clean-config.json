@@ -1,0 +1,139 @@
+{
+    "site": {
+        "title": "السيرة الذاتية - موقع السيرة الذاتية الشخصية",
+        "description": "موقع سيرة ذاتية ومعرض أعمال احترافي",
+        "keywords": "سيرة ذاتية, معرض أعمال, موقع شخصي",
+        "favicon": "assets/img/favicon.png",
+        "appleTouchIcon": "assets/img/apple-touch-icon.png",
+        "direction": "rtl",
+        "language": "ar"
+    },
+    "personal": {
+        "name": "شغلتك",
+        "profession": {
+            "typedItems": [
+                "مصممون",
+                "مطورون",
+                "تقنيون",
+                "مبرمجون"
+            ]
+        },
+        "heroBgImage": "assets/img/hero.jpg"
+    },
+    "navigation": [
+        {
+            "name": "الرئيسية",
+            "link": "#hero",
+            "icon": "bi-house"
+        },
+        {
+            "name": "معرض الأعمال",
+            "link": "#portfolio",
+            "icon": "bi-images"
+        }
+    ],
+    "social": {
+        "twitter": {
+            "link": "#",
+            "icon": "bi-twitter-x",
+            "enabled": true
+        },
+        "facebook": {
+            "link": "#",
+            "icon": "bi-facebook",
+            "enabled": true
+        },
+        "instagram": {
+            "link": "#",
+            "icon": "bi-instagram",
+            "enabled": true
+        },
+        "linkedin": {
+            "link": "#",
+            "icon": "bi-linkedin",
+            "enabled": true
+        }
+    },
+    "sections": {
+        "portfolio": {
+            "title": "معرض الأعمال",
+            "description": "مجموعة مختارة من أفضل المشاريع التي عملت عليها. تتضمن تطبيقات الويب، وتصميم المنتجات، والعلامات التجارية.",
+            "enabled": true,
+            "filters": [
+                "الكل",
+                "تطبيقات",
+                "منتجات",
+                "هوية بصرية"
+            ],
+            "items": [
+                {
+                    "title": "تطبيق الجوال",
+                    "category": "تطبيقات",
+                    "description": "تطبيق متجر إلكتروني",
+                    "image": "assets/img/masonry-portfolio/masonry-portfolio-1.jpg",
+                    "detailsLink": "portfolio-details.html"
+                },
+                {
+                    "title": "تصميم منتج",
+                    "category": "منتجات",
+                    "description": "تصميم عبوة منتج جديد",
+                    "image": "assets/img/masonry-portfolio/masonry-portfolio-2.jpg",
+                    "detailsLink": "portfolio-details.html"
+                },
+                {
+                    "title": "هوية بصرية",
+                    "category": "هوية بصرية",
+                    "description": "هوية بصرية لشركة ناشئة",
+                    "image": "assets/img/masonry-portfolio/masonry-portfolio-3.jpg",
+                    "detailsLink": "portfolio-details.html"
+                },
+                {
+                    "title": "تطبيق موبايل",
+                    "category": "تطبيقات",
+                    "description": "تطبيق للهواتف الذكية",
+                    "image": "assets/img/masonry-portfolio/masonry-portfolio-4.jpg",
+                    "detailsLink": "portfolio-details.html"
+                },
+                {
+                    "title": "منتج جديد",
+                    "category": "منتجات",
+                    "description": "تصميم غلاف منتج",
+                    "image": "assets/img/masonry-portfolio/masonry-portfolio-5.jpg",
+                    "detailsLink": "portfolio-details.html"
+                },
+                {
+                    "title": "هوية تجارية",
+                    "category": "هوية بصرية",
+                    "description": "هوية بصرية متكاملة",
+                    "image": "assets/img/masonry-portfolio/masonry-portfolio-6.jpg",
+                    "detailsLink": "portfolio-details.html"
+                },
+                {
+                    "title": "تطبيق ويب",
+                    "category": "تطبيقات",
+                    "description": "تطبيق ويب متجاوب",
+                    "image": "assets/img/masonry-portfolio/masonry-portfolio-7.jpg",
+                    "detailsLink": "portfolio-details.html"
+                },
+                {
+                    "title": "تصميم علبة",
+                    "category": "منتجات",
+                    "description": "تصميم غلاف منتج",
+                    "image": "assets/img/masonry-portfolio/masonry-portfolio-8.jpg",
+                    "detailsLink": "portfolio-details.html"
+                },
+                {
+                    "title": "شعار شركة",
+                    "category": "هوية بصرية",
+                    "description": "تصميم شعار جديد",
+                    "image": "assets/img/masonry-portfolio/masonry-portfolio-9.jpg",
+                    "detailsLink": "portfolio-details.html"
+                }
+            ]
+        }
+    },
+    "footer": {
+        "copyright": "براندون جونسون",
+        "description": "مصمم ومطور ويب متخصص في تقديم حلول رقمية مبتكرة وعالية الجودة للشركات والأفراد."
+    }
+}
