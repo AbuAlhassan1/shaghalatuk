@@ -56,113 +56,148 @@
     },
     "sections": {
         "portfolio": {
-            "title": "مشاريع تقنية",
-            "description": "معرض لأحدث مشاريعنا التقنية ومنتجاتنا المبتكرة. نقدم حلولاً برمجية متكاملة تشمل تطبيقات الويب، تطبيقات الموبايل، والذكاء الاصطناعي.",
             "enabled": true,
-            "filters": [
-                "الكل",
-                "ويب",
-                "موبايل",
-                "ذكاء-اصطناعي"
-            ],
-            "items": [
-                {
-                    "title": "منصة إدارة المشاريع",
-                    "category": "ويب",
-                    "description": "تطبيق ويب متكامل لإدارة المشاريع والمهام",
-                    "image": "assets/img/masonry-portfolio/masonry-portfolio-1.jpg",
-                    "detailsLink": "https://projects.example.com/pms",
-                    "client": "شركة تقنية رائدة",
-                    "date": "يناير 2023 - أبريل 2023",
-                    "platforms": "ويب، موبايل (iOS و Android)",
-                    "technologies": [
-                        "React.js",
-                        "Node.js",
-                        "MongoDB",
-                        "Express.js",
-                        "Redux",
-                        "GraphQL"
+            "title": "مشاريع تقنية",
+            "description": "معرض لأحدث مشاريعنا التقنية ومنتجاتنا المبتكرة",
+            "categories": {
+                "web": {
+                    "name": "تطبيقات الويب",
+                    "description": "تطبيقات وحلول الويب المتكاملة",
+                    "projects": [
+                        {
+                            "id": "pms",
+                            "title": "منصة إدارة المشاريع",
+                            "shortDescription": "تطبيق ويب متكامل لإدارة المشاريع والمهام",
+                            "fullDescription": "منصة متكاملة لإدارة المشاريع والمهام تدعم العمل الجماعي وتتبع التقدم",
+                            "image": "assets/img/masonry-portfolio/masonry-portfolio-1.jpg",
+                            "client": "شركة تقنية رائدة",
+                            "projectDate": "يناير 2023 - أبريل 2023",
+                            "projectUrl": "https://projects.example.com/pms",
+                            "platforms": [
+                                "ويب",
+                                "موبايل (iOS و Android)"
+                            ],
+                            "technologies": [
+                                "React.js",
+                                "Node.js",
+                                "MongoDB",
+                                "Express.js",
+                                "Redux",
+                                "GraphQL"
+                            ],
+                            "features": [
+                                "إدارة المهام والمشاريع",
+                                "تتبع الوقت والتكاليف",
+                                "التقارير والإحصائيات",
+                                "إدارة الفريق والصلاحيات"
+                            ]
+                        },
+                        {
+                            "id": "elearning",
+                            "title": "منصة التعلم الإلكتروني",
+                            "shortDescription": "نظام تعليمي تفاعلي عبر الإنترنت",
+                            "image": "assets/img/masonry-portfolio/masonry-portfolio-8.jpg",
+                            "projectUrl": "portfolio-details.html"
+                        }
                     ]
                 },
-                {
-                    "title": "نظام إدارة المبيعات",
-                    "category": "ويب",
-                    "description": "منصة متكاملة لإدارة المبيعات والمخزون",
-                    "image": "assets/img/masonry-portfolio/masonry-portfolio-2.jpg",
-                    "detailsLink": "https://projects.example.com/sales",
-                    "client": "شبكة متاجر التجزئة",
-                    "date": "مارس 2023 - يونيو 2023",
-                    "platforms": "ويب، موبايل (iOS و Android)",
-                    "technologies": [
-                        "Vue.js",
-                        "Laravel",
-                        "MySQL",
-                        "Docker",
-                        "AWS",
-                        "Redis"
+                "mobile": {
+                    "name": "تطبيقات الجوال",
+                    "description": "تطبيقات الهواتف الذكية وحلول الموبايل",
+                    "projects": [
+                        {
+                            "id": "delivery-app",
+                            "title": "تطبيق التوصيل السريع",
+                            "shortDescription": "تطبيق جوال لخدمات التوصيل السريع",
+                            "fullDescription": "تطبيق متكامل لخدمات التوصيل مع تتبع المندوبين والطلبات",
+                            "image": "assets/img/masonry-portfolio/masonry-portfolio-4.jpg",
+                            "client": "شركة خدمات لوجستية",
+                            "projectDate": "يوليو 2023 - سبتمبر 2023",
+                            "projectUrl": "https://projects.example.com/delivery",
+                            "platforms": [
+                                "iOS",
+                                "Android"
+                            ],
+                            "technologies": [
+                                "Flutter",
+                                "Firebase",
+                                "Google Maps API",
+                                "Node.js",
+                                "MongoDB"
+                            ],
+                            "features": [
+                                "تتبع الطلبات مباشرة",
+                                "نظام تقييم المندوبين",
+                                "الدفع الإلكتروني",
+                                "تقارير وإحصائيات"
+                            ]
+                        },
+                        {
+                            "id": "health-app",
+                            "title": "تطبيق الصحة الذكية",
+                            "shortDescription": "تطبيق متابعة الصحة واللياقة",
+                            "image": "assets/img/masonry-portfolio/masonry-portfolio-7.jpg",
+                            "projectUrl": "portfolio-details.html"
+                        }
                     ]
                 },
-                {
-                    "title": "مساعد ذكاء اصطناعي",
-                    "category": "ذكاء-اصطناعي",
-                    "description": "نظام محادثة ذكي للدعم الفني",
-                    "image": "assets/img/masonry-portfolio/masonry-portfolio-3.jpg",
-                    "detailsLink": "https://projects.example.com/ai-assistant",
-                    "client": "شركة اتصالات كبرى",
-                    "date": "مايو 2023 - أكتوبر 2023",
-                    "platforms": "ويب، موبايل، API",
-                    "technologies": [
-                        "Python",
-                        "TensorFlow",
-                        "OpenAI API",
-                        "FastAPI",
-                        "MongoDB",
-                        "Docker"
+                "ai": {
+                    "name": "الذكاء الاصطناعي",
+                    "description": "حلول وتطبيقات الذكاء الاصطناعي",
+                    "projects": [
+                        {
+                            "id": "ai-assistant",
+                            "title": "مساعد ذكاء اصطناعي",
+                            "shortDescription": "نظام محادثة ذكي للدعم الفني",
+                            "fullDescription": "مساعد ذكي يعتمد على الذكاء الاصطناعي لتقديم الدعم الفني التلقائي",
+                            "image": "assets/img/masonry-portfolio/masonry-portfolio-3.jpg",
+                            "client": "شركة اتصالات كبرى",
+                            "projectDate": "مايو 2023 - أكتوبر 2023",
+                            "projectUrl": "https://projects.example.com/ai-assistant",
+                            "platforms": [
+                                "ويب",
+                                "موبايل",
+                                "API"
+                            ],
+                            "technologies": [
+                                "Python",
+                                "TensorFlow",
+                                "OpenAI API",
+                                "FastAPI",
+                                "MongoDB",
+                                "Docker"
+                            ],
+                            "features": [
+                                "معالجة اللغة الطبيعية",
+                                "التعلم المستمر",
+                                "دعم متعدد اللغات",
+                                "تكامل مع أنظمة الشركة"
+                            ]
+                        },
+                        {
+                            "id": "recommendation-engine",
+                            "title": "محرك توصيات ذكي",
+                            "shortDescription": "نظام توصيات مخصص بالذكاء الاصطناعي",
+                            "image": "assets/img/masonry-portfolio/masonry-portfolio-9.jpg",
+                            "projectUrl": "portfolio-details.html"
+                        }
                     ]
-                },
-                {
-                    "title": "تطبيق التوصيل السريع",
-                    "category": "موبايل",
-                    "description": "تطبيق جوال لخدمات التوصيل السريع",
-                    "image": "assets/img/masonry-portfolio/masonry-portfolio-4.jpg",
-                    "detailsLink": "portfolio-details.html"
-                },
-                {
-                    "title": "نظام التحليل الذكي",
-                    "category": "ذكاء-اصطناعي",
-                    "description": "تحليل البيانات باستخدام الذكاء الاصطناعي",
-                    "image": "assets/img/masonry-portfolio/masonry-portfolio-5.jpg",
-                    "detailsLink": "portfolio-details.html"
-                },
-                {
-                    "title": "بوابة الدفع الإلكتروني",
-                    "category": "ويب",
-                    "description": "نظام متكامل للمدفوعات الإلكترونية",
-                    "image": "assets/img/masonry-portfolio/masonry-portfolio-6.jpg",
-                    "detailsLink": "portfolio-details.html"
-                },
-                {
-                    "title": "تطبيق الصحة الذكية",
-                    "category": "موبايل",
-                    "description": "تطبيق متابعة الصحة واللياقة",
-                    "image": "assets/img/masonry-portfolio/masonry-portfolio-7.jpg",
-                    "detailsLink": "portfolio-details.html"
-                },
-                {
-                    "title": "منصة التعلم الإلكتروني",
-                    "category": "ويب",
-                    "description": "نظام تعليمي تفاعلي عبر الإنترنت",
-                    "image": "assets/img/masonry-portfolio/masonry-portfolio-8.jpg",
-                    "detailsLink": "portfolio-details.html"
-                },
-                {
-                    "title": "محرك توصيات ذكي",
-                    "category": "ذكاء-اصطناعي",
-                    "description": "نظام توصيات مخصص بالذكاء الاصطناعي",
-                    "image": "assets/img/masonry-portfolio/masonry-portfolio-9.jpg",
-                    "detailsLink": "portfolio-details.html"
                 }
-            ]
+            },
+            "displayOptions": {
+                "showAllCategory": true,
+                "allCategoryName": "الكل",
+                "defaultCategory": "all",
+                "itemsPerPage": 9,
+                "enablePagination": true,
+                "enableFiltering": true,
+                "enableSorting": true,
+                "sortOptions": [
+                    "latest",
+                    "oldest",
+                    "name"
+                ]
+            }
         }
     },
     "footer": {
