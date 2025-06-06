@@ -33,6 +33,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS Files -->
+  <link href="assets/css/preloader.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/rtl.css" rel="stylesheet">
 
@@ -46,23 +47,24 @@
 </head>
 
 <body class="index-page">
-  <!-- ======= Preloader ======= -->
+  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- Load preloader script immediately -->
+  <script src="assets/js/config-validator.js"></script>
+  <script src="assets/js/preloader.js"></script>
 
   <main class="main">
 
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="">
+      <img src="assets/img/background.gif" alt="شغلتك">
 
       <div class="container" data-aos="zoom-out">
         <div class="row justify-content-center">
           <div class="col-lg-9">
-            <h2>Brandon Johnson</h2>
+            <h2>شغلتك</h2>
             <p>
               نحن
               <span class="typed">
@@ -89,8 +91,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>مشاريع تقنية</h2>
-        <p>معرض لأحدث مشاريعنا التقنية ومنتجاتنا المبتكرة. نقدم حلولاً برمجية متكاملة تشمل تطبيقات الويب، تطبيقات
-          الموبايل، والذكاء الاصطناعي.</p>
+        <p>معرض لأحدث مشاريعنا التقنية ومنتجاتنا المبتكرة</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -208,8 +209,8 @@
 
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
-      <h3 class="sitename">Brandon Johnson</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <h3 class="sitename">شغلتك</h3>
+      <p class="footer-description">شركة متخصصة في تقديم الحلول التقنية المبتكرة لعملائنا</p>
       <div class="social-links d-flex justify-content-center">
         <a href=""><i class="bi bi-twitter-x"></i></a>
         <a href=""><i class="bi bi-facebook"></i></a>
@@ -237,21 +238,26 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+  <!-- Core Dependencies -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+  <!-- Feature Libraries -->
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 
-  <!-- Main JS Files -->
+  <!-- Handle Preloader First -->
+  <script src="assets/js/preloader.js"></script>
+
+  <!-- Template Main JS Files -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/config-loader.js"></script>
   <script src="assets/js/portfolio-filter.js"></script>
+  <script src="assets/js/config-loader.js"></script>
 
 </body>
 

@@ -1,25 +1,23 @@
 /**
 * Template Name: MyResume
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
 * Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
 */
 
 (function () {
   "use strict";
 
-  /**
-   * Preloader
-   */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        preloader.remove();
-      }, 500);
-    });
-  }
+  // Remove preloader immediately when script loads
+  document.querySelector('#preloader')?.remove();
+
+  // Also remove on DOMContentLoaded as a backup
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('#preloader')?.remove();
+  });
+
+  // Final backup timeout
+  setTimeout(() => {
+    document.querySelector('#preloader')?.remove();
+  }, 1000);
 
   /**
    * Scroll top button

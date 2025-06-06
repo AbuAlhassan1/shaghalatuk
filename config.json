@@ -10,6 +10,7 @@
     },
     "personal": {
         "name": "شغلتك",
+        "shortDescription": "نحن شركة متخصصة في تقديم الحلول التقنية المبتكرة",
         "profession": {
             "typedItems": [
                 "مصممون",
@@ -18,7 +19,8 @@
                 "مبرمجون"
             ]
         },
-        "heroBgImage": "assets/img/hero.jpg"
+        "heroBgImage": "assets/img/background.gif",
+        "footerDescription": "شركة متخصصة في تقديم الحلول التقنية المبتكرة لعملائنا"
     },
     "navigation": [
         {
@@ -59,130 +61,151 @@
             "enabled": true,
             "title": "مشاريع تقنية",
             "description": "معرض لأحدث مشاريعنا التقنية ومنتجاتنا المبتكرة",
-            "categories": {
-                "web": {
-                    "name": "تطبيقات الويب",
-                    "description": "تطبيقات وحلول الويب المتكاملة",
-                    "projects": [
-                        {
-                            "id": "pms",
-                            "title": "منصة إدارة المشاريع",
-                            "shortDescription": "تطبيق ويب متكامل لإدارة المشاريع والمهام",
-                            "fullDescription": "منصة متكاملة لإدارة المشاريع والمهام تدعم العمل الجماعي وتتبع التقدم",
-                            "image": "assets/img/masonry-portfolio/masonry-portfolio-1.jpg",
-                            "client": "شركة تقنية رائدة",
-                            "projectDate": "يناير 2023 - أبريل 2023",
-                            "projectUrl": "https://projects.example.com/pms",
-                            "platforms": [
-                                "ويب",
-                                "موبايل (iOS و Android)"
-                            ],
-                            "technologies": [
-                                "React.js",
-                                "Node.js",
-                                "MongoDB",
-                                "Express.js",
-                                "Redux",
-                                "GraphQL"
-                            ],
-                            "features": [
-                                "إدارة المهام والمشاريع",
-                                "تتبع الوقت والتكاليف",
-                                "التقارير والإحصائيات",
-                                "إدارة الفريق والصلاحيات"
-                            ]
-                        },
-                        {
-                            "id": "elearning",
-                            "title": "منصة التعلم الإلكتروني",
-                            "shortDescription": "نظام تعليمي تفاعلي عبر الإنترنت",
-                            "image": "assets/img/masonry-portfolio/masonry-portfolio-8.jpg",
-                            "projectUrl": "portfolio-details.html"
-                        }
-                    ]
+            "filters": [
+                {
+                    "id": "all",
+                    "name": "All",
+                    "className": "*",
+                    "isActive": true
                 },
-                "mobile": {
-                    "name": "تطبيقات الجوال",
-                    "description": "تطبيقات الهواتف الذكية وحلول الموبايل",
-                    "projects": [
-                        {
-                            "id": "delivery-app",
-                            "title": "تطبيق التوصيل السريع",
-                            "shortDescription": "تطبيق جوال لخدمات التوصيل السريع",
-                            "fullDescription": "تطبيق متكامل لخدمات التوصيل مع تتبع المندوبين والطلبات",
-                            "image": "assets/img/masonry-portfolio/masonry-portfolio-4.jpg",
-                            "client": "شركة خدمات لوجستية",
-                            "projectDate": "يوليو 2023 - سبتمبر 2023",
-                            "projectUrl": "https://projects.example.com/delivery",
-                            "platforms": [
-                                "iOS",
-                                "Android"
-                            ],
-                            "technologies": [
-                                "Flutter",
-                                "Firebase",
-                                "Google Maps API",
-                                "Node.js",
-                                "MongoDB"
-                            ],
-                            "features": [
-                                "تتبع الطلبات مباشرة",
-                                "نظام تقييم المندوبين",
-                                "الدفع الإلكتروني",
-                                "تقارير وإحصائيات"
-                            ]
-                        },
-                        {
-                            "id": "health-app",
-                            "title": "تطبيق الصحة الذكية",
-                            "shortDescription": "تطبيق متابعة الصحة واللياقة",
-                            "image": "assets/img/masonry-portfolio/masonry-portfolio-7.jpg",
-                            "projectUrl": "portfolio-details.html"
-                        }
-                    ]
+                {
+                    "id": "web",
+                    "name": "Web",
+                    "className": ".filter-web",
+                    "isActive": false
                 },
-                "ai": {
-                    "name": "الذكاء الاصطناعي",
-                    "description": "حلول وتطبيقات الذكاء الاصطناعي",
-                    "projects": [
-                        {
-                            "id": "ai-assistant",
-                            "title": "مساعد ذكاء اصطناعي",
-                            "shortDescription": "نظام محادثة ذكي للدعم الفني",
-                            "fullDescription": "مساعد ذكي يعتمد على الذكاء الاصطناعي لتقديم الدعم الفني التلقائي",
-                            "image": "assets/img/masonry-portfolio/masonry-portfolio-3.jpg",
-                            "client": "شركة اتصالات كبرى",
-                            "projectDate": "مايو 2023 - أكتوبر 2023",
-                            "projectUrl": "https://projects.example.com/ai-assistant",
-                            "platforms": [
-                                "ويب",
-                                "موبايل",
-                                "API"
-                            ],
-                            "technologies": [
-                                "Python",
-                                "TensorFlow",
-                                "OpenAI API",
-                                "FastAPI",
-                                "MongoDB",
-                                "Docker"
-                            ],
-                            "features": [
-                                "معالجة اللغة الطبيعية",
-                                "التعلم المستمر",
-                                "دعم متعدد اللغات",
-                                "تكامل مع أنظمة الشركة"
-                            ]
-                        },
-                        {
-                            "id": "recommendation-engine",
-                            "title": "محرك توصيات ذكي",
-                            "shortDescription": "نظام توصيات مخصص بالذكاء الاصطناعي",
-                            "image": "assets/img/masonry-portfolio/masonry-portfolio-9.jpg",
-                            "projectUrl": "portfolio-details.html"
-                        }
-                    ]
+                {
+                    "id": "ai",
+                    "name": "AI",
+                    "className": ".filter-ai",
+                    "isActive": false
+                },
+                {
+                    "id": "mobile",
+                    "name": "Mobile",
+                    "className": ".filter-mobile",
+                    "isActive": false
                 }
+            ],
+            "projects": {
+                "web": [
+                    {
+                        "id": "encrypted-file-transfer",
+                        "title": "Encrypted File Transfer with Blockchain",
+                        "shortDescription": "Built a secure system for encrypted file sharing using ChaCha20 and blockchain.",
+                        "fullDescription": "A secure file transfer system that combines ChaCha20 encryption with blockchain technology for enhanced security and traceability.",
+                        "image": "https://static.news.bitcoin.com/wp-content/uploads/2016/02/OWZtBfDL-fl00.jpg",
+                        "category": "web",
+                        "filterClass": "filter-web",
+                        "technologies": [
+                            "Blockchain",
+                            "Encryption",
+                            "Python"
+                        ],
+                        "projectUrl": "https://github.com/49mg",
+                        "featured": true
+                    }
+                ],
+                "ai": [
+                    {
+                        "id": "violence-detection",
+                        "title": "Violence Detection in Videos",
+                        "shortDescription": "Developed a video frame classifier using CNN & ResNet50.",
+                        "fullDescription": "Deep learning system for detecting violence in video content using CNN and ResNet50 architecture.",
+                        "image": "https://sirixmonitoring.com/wp-content/uploads/2024/04/violence-detection-ai-graphics-01-660e75a6ce66f-scaled.webp",
+                        "category": "ai",
+                        "filterClass": "filter-ai",
+                        "technologies": [
+                            "Python",
+                            "Deep Learning",
+                            "TensorFlow"
+                        ],
+                        "projectUrl": "https://github.com/49mg",
+                        "featured": true
+                    },
+                    {
+                        "id": "speech-to-text",
+                        "title": "Speech-to-Text AI",
+                        "shortDescription": "Transformer-based speech recognition model.",
+                        "fullDescription": "Advanced speech recognition system using transformer architecture for accurate text transcription.",
+                        "image": "https://images.squarespace-cdn.com/content/v1/584ee3cc2994cac9e545aadd/1614723936610-2YKDTL8LYQ5H2HT147LG/image2.png",
+                        "category": "ai",
+                        "filterClass": "filter-ai",
+                        "technologies": [
+                            "NLP",
+                            "Speech Recognition",
+                            "Python"
+                        ],
+                        "projectUrl": "https://github.com/49mg",
+                        "featured": false
+                    },
+                    {
+                        "id": "sdn-anomaly-detection",
+                        "title": "SDN Traffic Anomaly Detection",
+                        "shortDescription": "AI model for detecting Miss & Elephant traffic anomalies in SDN networks.",
+                        "fullDescription": "Machine learning system for identifying and analyzing network traffic anomalies in Software-Defined Networks.",
+                        "image": "https://cdn.prod.website-files.com/62f27a49562f4748a9671e6f/6511f29678d8509cee7160a2_Anomaly_1.svg",
+                        "category": "ai",
+                        "filterClass": "filter-ai",
+                        "technologies": [
+                            "AI",
+                            "SDN",
+                            "Anomaly Detection"
+                        ],
+                        "projectUrl": "https://github.com/49mg",
+                        "featured": false
+                    },
+                    {
+                        "id": "face-recognition",
+                        "title": "Face Recognition & Detection",
+                        "shortDescription": "Implemented a real-time CNN-based facial recognition system.",
+                        "fullDescription": "Real-time facial recognition and detection system using Convolutional Neural Networks for accurate identification.",
+                        "image": "https://epe.brightspotcdn.com/dims4/default/3440acf/2147483647/strip/true/crop/1695x1150+13+0/resize/840x570!/quality/90/?url=https%3A%2F%2Fepe-brightspot.s3.us-east-1.amazonaws.com%2F53%2Fc9%2F8a96a2eb465e89e9d18fa364a671%2F102023-lead-image-facial-recognition-gt.jpg",
+                        "category": "ai",
+                        "filterClass": "filter-ai",
+                        "technologies": [
+                            "Computer Vision",
+                            "CNN",
+                            "Python"
+                        ],
+                        "projectUrl": "https://github.com/49mg",
+                        "featured": false
+                    },
+                    {
+                        "id": "medical-image-classification",
+                        "title": "Medical Image Classification",
+                        "shortDescription": "Built a deep learning model for diagnosing diseases from X-ray and MRI scans.",
+                        "fullDescription": "Advanced medical imaging analysis system using deep learning for disease diagnosis from various medical imaging formats.",
+                        "image": "https://engineering.tamu.edu/news/2023/10/_news-images/CSCE-News-YangMedicalImages-17Oct2023.jpg",
+                        "category": "ai",
+                        "filterClass": "filter-ai",
+                        "technologies": [
+                            "Deep Learning",
+                            "Medical Imaging",
+                            "Python"
+                        ],
+                        "projectUrl": "https://github.com/49mg",
+                        "featured": false
+                    }
+                ],
+                "mobile": [
+                    {
+                        "id": "gem-fitness",
+                        "title": "Gem Fitness App",
+                        "shortDescription": "Flutter-based fitness tracking app with AI-driven insights.",
+                        "fullDescription": "Comprehensive fitness tracking application built with Flutter, featuring AI-powered insights and personalized recommendations.",
+                        "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1000&q=80",
+                        "category": "mobile",
+                        "filterClass": "filter-mobile",
+                        "technologies": [
+                            "Flutter",
+                            "Firebase",
+                            "Mobile"
+                        ],
+                        "projectUrl": "https://github.com/49mg",
+                        "featured": false
+                    }
+                ]
             },
             "displayOptions": {
                 "showAllCategory": true,
@@ -201,7 +224,7 @@
         }
     },
     "footer": {
-        "copyright": "براندون جونسون",
+        "copyright": "شغلتك",
         "description": "مصمم ومطور ويب متخصص في تقديم حلول رقمية مبتكرة وعالية الجودة للشركات والأفراد."
     }
 }
